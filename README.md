@@ -10,5 +10,10 @@ After reading the contents of the xkcd.com website, the program:
 - assembles the data into a JSON-formatted embed
 - posts the embed to a discord social media channel
 
+This script assumes all xkcd comics are PNG files.
+If an xkcd is uploaded as a different file type (eg JPG), it will not display correctly.
+If a special interactive xkcd is uploaded, that won't display correctly either.
+No provision has yet been made for these cases.
+
 ## It is necessary to create a webhook for this bot in the discord server you intend to use it in.
 ## Paste the webhook link into the string "\[INSERT\_WEBHOOK\_LINK\_HERE\]".
