@@ -63,6 +63,7 @@ def getComic(comic):
     website = r[r.index("<div id=\"comic\">")+17:]
     website = website[:website.index("</div>")-1]
     link = "https:" + website[website.index("img src")+9:website.index("title")-2]
+    link = link[:-4] + "_2x.png" #edit link to double resolution version of comic
     text = html.unescape(website[website.index("title")+7:website.index("alt")-2])
     name = html.unescape(website[website.index("alt")+5:website.index("srcset")-2])
     number = r[r.index("Permanent link to this comic")+56:]
