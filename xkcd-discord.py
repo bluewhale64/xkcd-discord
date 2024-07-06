@@ -3,8 +3,9 @@ import datetime
 import time
 import html
 #This uses the in-built html module. Do not try to install it with pip.
+import os
 
-webhook = "[INSERT_WEBHOOK_LINK_HERE]"
+webhook = os.getenv("XKCD_WEBHOOK_URL")
 
 def sendRequest(method, args):
     #0 is get, 1 is post
