@@ -16,4 +16,4 @@ If a special interactive xkcd is uploaded, that won't display correctly either.
 No provision has yet been made for these cases.
 
 ## It is necessary to create a webhook for this bot in the discord server you intend to use it in.
-## Paste the webhook link into the string "\[INSERT\_WEBHOOK\_LINK\_HERE\]".
+You can either set the webhook link as an environment variable, or paste the link as a string in place of os.getenv("XKCD_WEBHOOK_URL").
